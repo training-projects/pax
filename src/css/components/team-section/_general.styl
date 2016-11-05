@@ -1,0 +1,26 @@
+.team-section
+  padding-top: 1em
+  padding-bottom: 1em
+  background-color: color_lightgray
+
+  > .team-list
+    margin-top: 2em
+    text-align: center
+
+    > .collaborator
+      width: 70%
+      @extend .centralized
+      color: color_gray
+
+      &:not(:last-child)
+        margin-bottom: 2em
+
+      > .photo
+        width: 40%
+        border-radius: 50%
+
+      > .office
+        margin-bottom: 0
+
+      > .description
+        set_font-weight(light)
