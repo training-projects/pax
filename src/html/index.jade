@@ -3,11 +3,11 @@ extends includes/_template.jade
 block content
   .general-wrapper
 
-    header.main-header
+    header.main-header.content
       h1: img.logo(src="assets/images/logo.png", alt="Pax Template Logo")
 
       nav.main-nav
-        h2.title.-hiddentitle Main Navigation
+        h2.title.-hiddentext Main Navigation
 
         ul.menu-list
           li.menu: a.link.-current(href="#") Home
@@ -17,11 +17,11 @@ block content
           li.menu: a.link(href="#") Contact
 
         ul.social-list
-          li.network: a.link(href="#") Facebook
-          li.network: a.link(href="#") Twitter
+          li.network.-hiddentext: a.link(href="#") Facebook
+          li.network.-hiddentext: a.link(href="#") Twitter
 
 
-    section.top-section
+    section.top-section.content
       h2.title Check our creativity
       h3.subtitle We are the best and we know it!
 
@@ -62,7 +62,7 @@ block content
         button.button(value="Ask for price", role="button") Ask for price
 
 
-    section.vector-section
+    section.vector-section.content
       h2.title How we work!
       h3.subtitle We are the best and we know it!
 
@@ -88,8 +88,8 @@ block content
       button.button(value="Ask for price", role="button") Ask for price
 
 
-    section.testimonials-section
-      h2.title.-hiddentitle Testimonials
+    section.testimonials-section.content
+      h2.title.-hiddentext Testimonials
 
       ul.testimonals-list
         li.testimonial
@@ -101,7 +101,7 @@ block content
             .from Company name.
 
 
-    section.team-section
+    section.team-section.content
       h2.title Meet our team
       h3.subtitle We are the best!
 
@@ -133,7 +133,7 @@ block content
       //- ...
 
 
-    footer.main-footer
+    footer.main-footer.content
       .links-wrapper
         ul.links-list
           li.item: a.link(href="#") Lorem ipsum
