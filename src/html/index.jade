@@ -1,3 +1,175 @@
 extends includes/_template.jade
 
 block content
+  .general-wrapper
+
+    header.main-header
+      h1: img.logo(src="assets/images/logo.png", alt="Pax Template Logo")
+
+      nav.main-nav
+        h2.title.-hiddentitle Main Navigation
+
+        ul.menu-list
+          li.menu: a.link.-current(href="#") Home
+          li.menu: a.link(href="#") About
+          li.menu: a.link(href="#") Our Team
+          li.menu: a.link(href="#") Portfolio
+          li.menu: a.link(href="#") Contact
+
+        ul.social-list
+          li.network: a.link(href="#") Facebook
+          li.network: a.link(href="#") Twitter
+
+
+    section.top-section
+      h2.title Check our creativity
+      h3.subtitle We are the best and we know it!
+
+      button.button(value="Ask for price", role="button") Ask for price
+
+      img.featuredimage(src="assets/images/macbook.png", alt="MacBook Picture")
+
+      ul.services-list
+        li.service
+          img.icon(src="assets/images/icon-service-01.png", alt="Chat Icon")
+          h4.servicename Lorem Ipsum
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        li.service
+          img.icon(src="assets/images/icon-service-02.png", alt="Molecules Icon")
+          h4.servicename Lorem Ipsum
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        li.service
+          img.icon(src="assets/images/icon-service-03.png", alt="Lamp Icon")
+          h4.servicename Lorem Ipsum
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        li.service
+          img.icon(src="assets/images/icon-service-04.png", alt="Monitor Icon")
+          h4.servicename Lorem Ipsum
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      section.footer-bg
+        button.button(value="Ask for price", role="button") Ask for price
+
+
+    section.vector-section
+      h2.title How we work!
+      h3.subtitle We are the best and we know it!
+
+      .vector-wrapper
+        img.vector(src="assets/images/vector.png", alt="Vector with our workflow")
+
+      .description-wrapper
+        p.description
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          | ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+
+        p.description
+          | Aliquip ex ea commodo consequat. Duis aute irure dolor in
+          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+
+        p.description
+          | Pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          | culpa qui officia deserunt mollit anim id est laborum pariatur.
+          | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          | officia deserunt mollit anim id est laborum.
+
+      button.button(value="Ask for price", role="button") Ask for price
+
+
+    section.testimonials-section
+      h2.title.-hiddentitle Testimonials
+
+      ul.testimonals-list
+        li.testimonial
+          img.avatar(src="assets/images/avatar-01.jpg", alt="Photo of a person")
+          p.text
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            | eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p.author Jan Doe
+            .from Company name.
+
+
+    section.team-section
+      h2.title Meet our team
+      h3.subtitle We are the best!
+
+      ul.team-list
+        li.collaborator
+          img.photo(src="assets/images/avatar-04.jpg", alt="Photo of a person")
+          h4.office Lorem Ipsum
+          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        li.collaborator
+          img.photo(src="assets/images/avatar-05.jpg", alt="Photo of a person")
+          h4.office Lorem Ipsum
+          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        li.collaborator
+          img.photo(src="assets/images/avatar-06.jpg", alt="Photo of a person")
+          h4.office Lorem Ipsum
+          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        li.collaborator
+          img.photo(src="assets/images/avatar-07.jpg", alt="Photo of a person")
+          h4.office Lorem Ipsum
+          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+      button.button(value="Ask for price", role="button") Ask for price
+
+
+    section.map-section
+      //- ...
+
+
+    footer.main-footer
+      .links-wrapper
+        ul.links-list
+          li.item: a.link(href="#") Lorem ipsum
+          li.item: a.link(href="#") dolor sit
+          li.item: a.link(href="#") amet,
+          li.item: a.link(href="#") consectetur adipisicing
+          li.item: a.link(href="#") elit,
+          li.item: a.link(href="#") sed do
+          li.item: a.link(href="#") eiusmod tempor
+
+        ul.links-list
+          li.item: a.link(href="#") incididunt ut
+          li.item: a.link(href="#") labore et
+          li.item: a.link(href="#") dolore magna
+          li.item: a.link(href="#") aliqua.
+          li.item: a.link(href="#") Ut enim
+          li.item: a.link(href="#") ad minim
+          li.item: a.link(href="#") veniam,
+
+        ul.links-list
+          li.item: a.link(href="#") nostrud exercitation
+          li.item: a.link(href="#") ullamco laboris
+          li.item: a.link(href="#") nisi ut
+          li.item: a.link(href="#") aliquip ex
+          li.item: a.link(href="#") ea commodo
+          li.item: a.link(href="#") consequat.
+          li.item: a.link(href="#") Duis aute
+
+        ul.links-list
+          li.item: a.link(href="#") irure dolor
+          li.item: a.link(href="#") in reprehenderit
+          li.item: a.link(href="#") in voluptate
+          li.item: a.link(href="#") velit esse
+          li.item: a.link(href="#") cillum dolore
+          li.item: a.link(href="#") eu fugiat
+          li.item: a.link(href="#") nulla pariatur
+
+      p.whatever Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.
+      p.copy Copyright &copy; 2016.
