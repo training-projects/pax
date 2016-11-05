@@ -1,0 +1,22 @@
+{
+  "name": "pax-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:training-projects/pax.git",
+    "type": "git"
+  },
+  "author": "Luan Vicente <hi@idlua.me>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.11.0",
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
