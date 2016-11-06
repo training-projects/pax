@@ -1,0 +1,20 @@
+.services-list
+  margin-top: 2.5em
+  text-align: center
+
+  > .service
+    width: 80%
+    @extend .centralized
+
+    &:not(:last-child)
+      margin-bottom: 2.5em
+
+    > .servicename
+      margin-top: 0
+      margin-bottom: 0
+      color: color_darkgray
+
+    > .description
+      color: color_gray
+      set_font-weight(light)
+      line-height: 1.5

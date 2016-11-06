@@ -3,11 +3,11 @@ extends includes/_template.jade
 block content
   .general-wrapper
 
-    header.main-header
+    header.main-header.content
       h1: img.logo(src="assets/images/logo.png", alt="Pax Template Logo")
 
       nav.main-nav
-        h2.title.-hiddentitle Main Navigation
+        h2.title.-hiddentext Main Navigation
 
         ul.menu-list
           li.menu: a.link.-current(href="#") Home
@@ -17,15 +17,17 @@ block content
           li.menu: a.link(href="#") Contact
 
         ul.social-list
-          li.network: a.link(href="#") Facebook
-          li.network: a.link(href="#") Twitter
+          li.network.-hiddentext: a.link(href="#") Facebook
+          li.network.-hiddentext: a.link(href="#") Twitter
 
 
-    section.top-section
-      h2.title Check our creativity
-      h3.subtitle We are the best and we know it!
+    section.top-section.content
+      .title-wrapper
+        h2.title Check our creativity
+        h3.subtitle.-blue We are the best and we know it!
 
-      button.button(value="Ask for price", role="button") Ask for price
+      .button-wrapper
+        button.button.-pink(value="Ask for price", role="button") Ask for price
 
       img.featuredimage(src="assets/images/macbook.png", alt="MacBook Picture")
 
@@ -58,13 +60,16 @@ block content
             | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
             | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-      section.footer-bg
-        button.button(value="Ask for price", role="button") Ask for price
+
+    section.creativity-bg
+      .button-wrapper
+        button.button.-blue(value="Ask for price", role="button") Ask for price
 
 
     section.vector-section
-      h2.title How we work!
-      h3.subtitle We are the best and we know it!
+      .title-wrapper
+        h2.title.-white How we work!
+        h3.subtitle We are the best and we know it!
 
       .vector-wrapper
         img.vector(src="assets/images/vector.png", alt="Vector with our workflow")
@@ -85,55 +90,59 @@ block content
           | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           | officia deserunt mollit anim id est laborum.
 
-      button.button(value="Ask for price", role="button") Ask for price
+      .button-wrapper
+        button.button.-white(value="Ask for price", role="button") Ask for price
 
 
-    section.testimonials-section
-      h2.title.-hiddentitle Testimonials
+    section.testimonials-section.content
+      h2.title.-hiddentext Testimonials
 
-      ul.testimonals-list
-        li.testimonial
-          img.avatar(src="assets/images/avatar-01.jpg", alt="Photo of a person")
-          p.text
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            | eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          p.author Jan Doe
-            .from Company name.
+      .testimonial
+        img.avatar(src="assets/images/avatar-01.jpg", alt="Photo of a person")
+        p.text
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          | eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p.author Jane Doe,
+          span.from  Company name.
 
 
-    section.team-section
-      h2.title Meet our team
-      h3.subtitle We are the best!
+    section.team-section.content
+      .title-wrapper
+        h2.title Meet our team
+        h3.subtitle We are the best!
 
       ul.team-list
         li.collaborator
           img.photo(src="assets/images/avatar-04.jpg", alt="Photo of a person")
           h4.office Lorem Ipsum
-          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
         li.collaborator
           img.photo(src="assets/images/avatar-05.jpg", alt="Photo of a person")
           h4.office Lorem Ipsum
-          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
         li.collaborator
           img.photo(src="assets/images/avatar-06.jpg", alt="Photo of a person")
           h4.office Lorem Ipsum
-          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
         li.collaborator
           img.photo(src="assets/images/avatar-07.jpg", alt="Photo of a person")
           h4.office Lorem Ipsum
-          p.decription Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-      button.button(value="Ask for price", role="button") Ask for price
+      .button-wrapper
+        button.button.-pink(value="Ask for price", role="button") Ask for price
 
 
     section.map-section
-      //- ...
+      iframe(width="100%" height="100%" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH3frsc5ZzpQRoU10aab2BOk&key=AIzaSyBo-b0xxO0mIgvd-xyp8yLutvcUwH5VkDo"
+        allowfullscreen)
 
 
-    footer.main-footer
+    footer.main-footer.content
       .links-wrapper
         ul.links-list
           li.item: a.link(href="#") Lorem ipsum
@@ -171,5 +180,5 @@ block content
           li.item: a.link(href="#") eu fugiat
           li.item: a.link(href="#") nulla pariatur
 
-      p.whatever Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.
+      p.whatever Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       p.copy Copyright &copy; 2016.

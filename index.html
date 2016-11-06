@@ -12,10 +12,10 @@
   </head>
   <body>
     <div class="general-wrapper">
-      <header class="main-header">
+      <header class="main-header content">
         <h1><img src="assets/images/logo.png" alt="Pax Template Logo" class="logo"></h1>
         <nav class="main-nav">
-          <h2 class="title -hiddentitle">Main Navigation</h2>
+          <h2 class="title -hiddentext">Main Navigation</h2>
           <ul class="menu-list">
             <li class="menu"><a href="#" class="link -current">Home</a></li>
             <li class="menu"><a href="#" class="link">About</a></li>
@@ -24,15 +24,19 @@
             <li class="menu"><a href="#" class="link">Contact</a></li>
           </ul>
           <ul class="social-list">
-            <li class="network"><a href="#" class="link">Facebook</a></li>
-            <li class="network"><a href="#" class="link">Twitter</a></li>
+            <li class="network -hiddentext"><a href="#" class="link">Facebook</a></li>
+            <li class="network -hiddentext"><a href="#" class="link">Twitter</a></li>
           </ul>
         </nav>
       </header>
-      <section class="top-section">
-        <h2 class="title">Check our creativity</h2>
-        <h3 class="subtitle">We are the best and we know it!</h3>
-        <button value="Ask for price" role="button" class="button">Ask for price</button><img src="assets/images/macbook.png" alt="MacBook Picture" class="featuredimage">
+      <section class="top-section content">
+        <div class="title-wrapper">
+          <h2 class="title">Check our creativity</h2>
+          <h3 class="subtitle -blue">We are the best and we know it!</h3>
+        </div>
+        <div class="button-wrapper">
+          <button value="Ask for price" role="button" class="button -pink">Ask for price</button>
+        </div><img src="assets/images/macbook.png" alt="MacBook Picture" class="featuredimage">
         <ul class="services-list">
           <li class="service"><img src="assets/images/icon-service-01.png" alt="Chat Icon" class="icon">
             <h4 class="servicename">Lorem Ipsum</h4>
@@ -63,13 +67,17 @@
             </p>
           </li>
         </ul>
-        <section class="footer-bg">
-          <button value="Ask for price" role="button" class="button">Ask for price</button>
-        </section>
+      </section>
+      <section class="creativity-bg">
+        <div class="button-wrapper">
+          <button value="Ask for price" role="button" class="button -blue">Ask for price</button>
+        </div>
       </section>
       <section class="vector-section">
-        <h2 class="title">How we work!</h2>
-        <h3 class="subtitle">We are the best and we know it!</h3>
+        <div class="title-wrapper">
+          <h2 class="title -white">How we work!</h2>
+          <h3 class="subtitle">We are the best and we know it!</h3>
+        </div>
         <div class="vector-wrapper"><img src="assets/images/vector.png" alt="Vector with our workflow" class="vector"></div>
         <div class="description-wrapper">
           <p class="description">
@@ -88,49 +96,51 @@
             officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <button value="Ask for price" role="button" class="button">Ask for price</button>
+        <div class="button-wrapper">
+          <button value="Ask for price" role="button" class="button -white">Ask for price</button>
+        </div>
       </section>
-      <section class="testimonials-section">
-        <h2 class="title -hiddentitle">Testimonials</h2>
-        <ul class="testimonals-list">
-          <li class="testimonial"><img src="assets/images/avatar-01.jpg" alt="Photo of a person" class="avatar">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="author">Jan Doe
-              <div class="from">Company name.</div>
-            </p>
-          </li>
-        </ul>
+      <section class="testimonials-section content">
+        <h2 class="title -hiddentext">Testimonials</h2>
+        <div class="testimonial"><img src="assets/images/avatar-01.jpg" alt="Photo of a person" class="avatar">
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="author">Jane Doe,<span class="from"> Company name.</span></p>
+        </div>
       </section>
-      <section class="team-section">
-        <h2 class="title">Meet our team</h2>
-        <h3 class="subtitle">We are the best!</h3>
+      <section class="team-section content">
+        <div class="title-wrapper">
+          <h2 class="title">Meet our team</h2>
+          <h3 class="subtitle">We are the best!</h3>
+        </div>
         <ul class="team-list">
           <li class="collaborator"><img src="assets/images/avatar-04.jpg" alt="Photo of a person" class="photo">
             <h4 class="office">Lorem Ipsum</h4>
-            <p class="decription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </li>
           <li class="collaborator"><img src="assets/images/avatar-05.jpg" alt="Photo of a person" class="photo">
             <h4 class="office">Lorem Ipsum</h4>
-            <p class="decription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </li>
           <li class="collaborator"><img src="assets/images/avatar-06.jpg" alt="Photo of a person" class="photo">
             <h4 class="office">Lorem Ipsum</h4>
-            <p class="decription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </li>
           <li class="collaborator"><img src="assets/images/avatar-07.jpg" alt="Photo of a person" class="photo">
             <h4 class="office">Lorem Ipsum</h4>
-            <p class="decription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </li>
         </ul>
-        <button value="Ask for price" role="button" class="button">Ask for price</button>
+        <div class="button-wrapper">
+          <button value="Ask for price" role="button" class="button -pink">Ask for price</button>
+        </div>
       </section>
       <section class="map-section">
-        
+        <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH3frsc5ZzpQRoU10aab2BOk&amp;key=AIzaSyBo-b0xxO0mIgvd-xyp8yLutvcUwH5VkDo" allowfullscreen></iframe>
       </section>
-      <footer class="main-footer">
+      <footer class="main-footer content">
         <div class="links-wrapper">
           <ul class="links-list">
             <li class="item"><a href="#" class="link">Lorem ipsum</a></li>
@@ -169,7 +179,7 @@
             <li class="item"><a href="#" class="link">nulla pariatur</a></li>
           </ul>
         </div>
-        <p class="whatever">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+        <p class="whatever">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p class="copy">Copyright &copy; 2016.</p>
       </footer>
     </div>
