@@ -4,6 +4,8 @@ var gulp        = require('gulp'),
 gulp.task('browser-sync', ['css'], function() {
   browserSync.init({
     server: '.',
-    notify: false
+    notify: false,
+    ui: false,
+    open: false
   });
 });
