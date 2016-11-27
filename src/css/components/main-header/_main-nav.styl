@@ -1,6 +1,10 @@
 .main-nav
+  height: 0
+  overflow-y: hidden
+  transition: 0.5s
 
   > .menu-list
+    margin-bottom: 1em
 
     > .menu
       padding-top: 0.5em
@@ -14,3 +18,27 @@
 
         &:hover
           color: color_gray
+
+  > .social-list
+
+    > .network
+      display: inline-block
+      width: 35px
+      height: 35px
+
+      &:not(:last-child)
+        margin-right: 0.5em
+
+      > .link
+        display: block
+        height: 100%
+
+        &[href*="facebook"]
+          background-image: url('../images/facebook.png')
+          background-size: contain
+        &[href*="twitter"]
+          background-image: url('../images/twitter.png')
+          background-size: contain
+
+.-open
+  height: 240px
