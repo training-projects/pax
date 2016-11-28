@@ -1,6 +1,15 @@
 .main-header
   padding-bottom: 1em
   border-bottom: 2px solid color_lightgray
+  /* @media 1024px */
+  @media (min-width: 1024px)
+    padding-right: 2em
+    padding-left: 2em
+
+  /* @media 1024px */
+  @media (min-width: 1366px)
+    padding-right: 200px
+    padding-left: 200px
 
   > h1
     display: inline-block
@@ -14,3 +23,6 @@
     margin-top: 1.5em
     background-image: url('../images/menu.png')
     cursor: pointer
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      display: none

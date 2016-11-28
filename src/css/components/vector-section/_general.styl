@@ -4,15 +4,37 @@
   text-align: center
   color: #fff
   background-color: color_blue
+  /* @media 1024px */
+  @media (min-width: 1024px)
+    padding-right: 2em
+    padding-left: 2em
+
+    &::after
+      @extend .clearfix
 
   > .vector-wrapper
     width: 80%
     margin-top: 2.5em
     margin-bottom: 2.5em
     @extend .centralized
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      float: left
+      width: 50%
 
   > .description-wrapper
     padding-right: 1em
     padding-left: 1em
     set_font-weight(light)
     text-align: left
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      float: right
+      width: 50%
+      margin-top: 2em
+
+  > .button-wrapper
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      &::before
+        @extend .clearfix

@@ -2,16 +2,38 @@
   height: 0
   overflow-y: hidden
   transition: 0.5s
+  /* @media 1024px */
+  @media (min-width: 1024px)
+    display: inline-block
+    float: right
+    height: 100%
+    margin-top: 1.5em
+    overflow-y: initial
 
   > .menu-list
     margin-bottom: 1em
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      display: inline-block
 
     > .menu
       padding-top: 0.5em
       padding-bottom: 0.5em
+      /* @media 1024px */
+      @media (min-width: 1024px)
+        display: inline-block
 
       &:not(:last-child)
         border-bottom: 1px dotted color_gray
+        /* @media 1024px */
+        @media (min-width: 1024px)
+          margin-right: 1em
+          border: none
+
+      &:first-child > .link
+        padding: 0.5em 1em
+        border: 1px solid color_gray
+        border-radius: 2em
 
       > .link
         color: color_blue
@@ -20,6 +42,11 @@
           color: color_gray
 
   > .social-list
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      display: inline-block
+      float: right
+      margin-left: 1.5em
 
     > .network
       display: inline-block
