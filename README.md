@@ -1,6 +1,6 @@
 # Pax
 
-![Pax Preview](layout/pax.jpg)
+![Pax Preview](layout/pax.png)
 
 
 #### Developers
