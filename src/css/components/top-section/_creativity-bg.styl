@@ -2,9 +2,15 @@
   height: 200px
   background-image: url('../images/creativity-banner.png')
   background-size: cover
+  /* @media 1024px */
+  @media (min-width: 1024px)
+    height: 400px
 
   > .button-wrapper
     transform: translateY(250%)
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      transform: translateY(650%)
 
     > .button
       box-shadow: 0 0 10em 35px #fff
